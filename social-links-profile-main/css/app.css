@@ -58,9 +58,10 @@ body
 }
 .header_local{
 
-    color:#CCEE41;
+    color:#cbee41c9;
     text-align: center;
     margin-bottom: 25px;
+    font-weight: bold;
 
 }
 .header_job{
@@ -80,9 +81,9 @@ body
 {
     display: block;
     text-align: center;
-    color:#F7F7F7;
+    color:#f7f7f7d0;
     text-decoration: none;
-    background: hsl(0, 1%, 25%);
+    background: hsla(0, 1%, 25%, 0.637);
     max-width: 275px;
     margin-left: auto;
     margin-right:auto;
