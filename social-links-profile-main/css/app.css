@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./../assets/fonts/static/Inter-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./../assets/fonts/static/Inter-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./../assets/fonts/static/Inter-SemiBold.ttf");
+    font-weight: 600;
+}
+*,*::after,*::before
+{
+    margin:0;
+    padding:0;
+
+}
+
+body
+{
+    font-size: 14px;
+    font-family: "Inter",sans-serif;
+    background: #141414;
+
+}
+.container
+{
+    background: #1F1F1F;
+    max-width: 320px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+    margin-top: 110px;
+    border-radius: 20px;
+}
+.header_img
+{
+    width:90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+.header_img img
+{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+.header_title
+{
+    color:#F7F7F7;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.header_local{
+
+    color:#CCEE41;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.header_job{
+    color:#E2E2E2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main
+{
+    max-width: 290px;
+    margin:0 auto 0 auto;
+}
+.social
+{
+}
+.social_btn
+{
+    display: block;
+    text-align: center;
+    color:#F7F7F7;
+    text-decoration: none;
+    background: hsl(0, 1%, 25%);
+    max-width: 275px;
+    margin-left: auto;
+    margin-right:auto;
+    font-weight: 600;
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: background 0.4s;
+
+}
+.social_btn:last-child
+{
+    margin-bottom: 0;
+}
+.social_btn:active,
+.social_btn:hover
+{
+    background: #CCEE41;
+    color:#1F1F1F;
+}
