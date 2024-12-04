@@ -1,0 +1,201 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family:"YoungSerif" ;
+    src: url('./font/Young_Serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Outfit" ;
+    src: url('./font/Outfit/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Outfit" ;
+    src: url('./font/Outfit/Outfit-Medium.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family:"Outfit" ;
+    src: url('./font/Outfit/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+*,
+*::after
+*::before
+{
+    margin: 0;
+    
+}
+.container
+{
+    max-width: 320px;
+    margin-left: auto;
+    margin-right:auto;
+}
+body
+{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    font-size: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+.section
+{
+    margin-bottom: 40;
+}
+
+.section:last-child
+{
+    margin-bottom: 0;
+}
+.section-pink
+{
+    background:hsl(330, 100%, 98%);
+    ;
+    border-radius: 10px;
+    padding:26px 70px  30px 30px;
+}
+.section-pink .title-pink
+{
+    color:hsl(332, 51%, 32%);
+
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+ul li::marker, ol li::marker
+{
+    color:hsl(332, 51%, 32%);
+    font-weight: bold;
+    margin-right: 25px;
+    
+}
+ul li::first-letter, ol li::first-letter
+{
+
+    margin-left:10px ;
+}
+ul li ,  ol li
+{
+    margin-bottom: 10px;
+
+}
+
+h1
+{
+    font-size: 30px;
+    font-family: "Young Serif",serif;
+    font-weight: bold;
+    margin-bottom:40px;
+}
+h1,h2
+{
+    font-family: "Young Serif",serif;
+    font-weight: 700;
+}
+h2
+{
+    color:#834433;
+}
+.header-img
+{
+    background: center / cover  url("../images/image-omelette.jpeg") no-repeat ;
+    height:150px;
+    width:100%;
+    margin-bottom: 50px;
+}
+.header-title
+{
+    max-width: 305px;
+    margin: 0 auto 43px auto;
+    
+}
+.border-bottom
+{
+    width:100%;
+    background:#E0E0E0;
+    border: 10px;
+    height:1px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.calory
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.calory span:last-child
+{
+    color:#834433;
+    display: inline-block;
+}
+.calory span:first-child
+{
+    display: inline-block;
+}
+.calory-border
+{
+    height:1px;
+    width:100%;
+    display: block;
+    margin-top:20px;
+    margin-bottom: 25px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+
+}
+.calory:last-child::after
+{
+    display:none;
+}
+.calory:last-child
+{
+    margin-bottom: 150px;
+}
+
+@media screen and (min-width:650px) {
+    .container
+    {
+        max-width: 730px;
+        margin-left:auto;
+        margin-right:auto;
+        background: #fff;
+        padding:40px 50px;
+        border-radius: 20px;
+    }
+    .header-img
+    {
+        display: none;
+        opacity: 0;
+    }
+    .header-img-desktop
+    {
+        background: center / cover url("./../images/image-omelette.jpeg") no-repeat;
+        border-radius: 20px;
+        height: 300px ;
+        width:100%;
+        display: block;
+        margin:0 auto 50px auto ;
+        
+    }
+    .section
+    {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    body
+    {
+        background: #F3E5D8;
+    }
+    .header-title
+    {
+        width:100%;
+        max-width: 100%;
+    }
+}
