@@ -1,0 +1,163 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body,html{
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    height:100%;
+    width:100%;
+    line-height: 1.6;
+    background-color: #F8EEFF;
+
+
+}
+.main{
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+h1{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.img-top{
+    width: 100%;
+    display: block;
+    z-index: -1;
+
+}
+.faq-container{
+    transform: translate(0px, -40px);
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 32px 52px rgba(80, 0, 118,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right:auto
+}
+.faq-header{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-bottom: 24px;
+}
+.faq-header img{
+    margin-right: 24px;
+    height: 24px;
+    width: 24px;
+    
+}
+.faq-questions{
+    width: 100%;
+
+}
+.faq-question{
+    margin-bottom: 24px;
+}
+.faq-question::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D9D9D9;
+    margin-top: 24px;
+}
+
+.faq-question:last-child::after{
+    display: none;
+}
+.faq-question:last-child{
+    margin-bottom: 0;
+}
+.faq-question-title{
+    font-weight: bold;
+    font-size: 16px;
+    color:#301534;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.faq-question-title.title {
+    max-width: 225px;
+}
+.faq-question-title img{
+    width:35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+}
+    
+.faq-question-text{
+    color:#301534;
+    font-weight: normal;
+    font-size: 16px;
+    display: none;
+}
+
+@media screen and (min-width:780px) {
+    .faq-container{
+    transform: translate(0px, -15%);
+    }
+
+}
