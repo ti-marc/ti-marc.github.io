@@ -74,7 +74,7 @@ body,html{
 }
 h1{
     font-weight: bold;
-    font-size: 32px;
+    font-size: 56px;
     margin-bottom: 24px;
 }
 .img-top{
@@ -101,8 +101,8 @@ h1{
 }
 .faq-header img{
     margin-right: 24px;
-    height: 24px;
-    width: 24px;
+    height: 40px;
+    width: 40px;
     
 }
 .faq-questions{
