@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<script src="./js/index.js" type="module" defer></script>
+		<title>Frontend Mentor | Product list with cart</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 0.6875rem;
+				text-align: center;
+			}
+
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container">
+			<h1 class="title-page">Desserts</h1>
+			<div class="flex">
+				<div class="products" id="products"></div>
+
+				<div class="cart-checkout">
+					<h2 class="cart-checkout-title">Your Cart
+						<span class="counter">(0)</span>
+					</h2>
+					<div class="cart-checkout-empty active">
+						<img class='cart-checkout-img' src="./assets/images/illustration-empty-cart.svg" alt=" empty cart">
+						<div class="cart-checkout-text">
+							Your added items will appear here
+						</div>
+					</div>
+					<div class="cart-checkout-items">
+						<div class='cart-checkout-lists'></div>
+						<div class="cart-checkout-total">
+							<div class="cart-checkout-total-title">Order total</div>
+							<div class="cart-checkout-total-price">0</div>
+						</div>
+						<div class="cart-checkout-delivery">
+							<img src="./assets/images/icon-carbon-neutral.svg" alt="carbon-neutral">
+							<div class="cart-checkout-delivery-text">This is a
+								<span class="text-bold">carbon-neutral</span>
+								delivery</div>
+						</div>
+						<button class="checkout-button">Confirm Order</button>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+			<footer class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+																														    Coded by
+				<a href="https://github.com/ti-marc">ti-marc</a>.
+			</footer>
+		</body>
+	</body>
+</html>
