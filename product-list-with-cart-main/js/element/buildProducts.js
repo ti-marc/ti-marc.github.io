@@ -4,7 +4,7 @@ async function buildProducts() {
   const dessertList = document.querySelector("#products")
 
   try {
-    const data = await fetch("/data.json")
+    const data = await fetch("./../../data.json")
     const desserts_data = await data.json()
 
     for (let i = 0; i < desserts_data.length; i++) {
